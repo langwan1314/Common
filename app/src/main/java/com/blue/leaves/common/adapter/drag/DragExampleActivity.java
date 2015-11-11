@@ -34,7 +34,7 @@ import java.util.List;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
-public class ExampleActivity extends AppCompatActivity {
+public class DragExampleActivity extends AppCompatActivity {
 
   @Bind(android.R.id.list)
   RecyclerView recyclerView;
