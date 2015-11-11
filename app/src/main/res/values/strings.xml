@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Common</string>
+    <string name="action_layout_linear">LinearLayoutManager</string>
+    <string name="action_layout_grid">GridLayoutManager</string>
+    <string name="action_layout_staggered">StaggeredLayoutManager</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="linear_example_label">Linear example with headers and footers</string>
+    <string name="grid_example_label">Grid two types example</string>
+    <string name="simple_example_label">Grid SimpleAdapter example</string>
+    <string name="parallax_example_label">Parallax example</string>
+    <string name="filter_example_label">Filter example</string>
+
+    <!-- Linear example-->
+    <string name="linear_example_header_1">Header 1</string>
+    <string name="linear_example_header_2">Header 2</string>
+    <string name="linear_example_footer_1">Footer 1</string>
+    <string name="linear_example_footer_2">Footer 2</string>
+    <string name="linear_example_item_move_to_top">Move to top</string>
+    <string name="linear_example_item_remove">Remove</string>
+    <string name="linear_example_item_up">Up</string>
+    <string name="linear_example_item_down">Down</string>
+    <string name="linear_example_header_add">Add</string>
+    <string name="linear_example_header_clear">Clear</string>
+
+    <!-- Grid example-->
+    <string name="grid_example_item_move_to_top">Move to top</string>
+    <string name="grid_example_item_remove">Remove</string>
+    <string name="grid_example_item_up">Up</string>
+    <string name="grid_example_item_down">Down</string>
+    <string name="grid_example_item_add_to">Add to previous position</string>
+    <string name="grid_example_item_set">Set to previous position</string>
+
+    <!-- Simple example-->
+    <string name="simple_example_item_move_to_top">Move to top</string>
+    <string name="simple_example_item_remove">Remove</string>
+    <string name="simple_example_item_up">Up</string>
+    <string name="simple_example_item_down">Down</string>
+
+    <!-- Filter example-->
+    <string name="filter_example_edit_text_hint">Type filter</string>
+    <string name="filter_example_no_result">No results</string>
+    <string-array name="names">
+        <item>John</item>
+        <item>Bob</item>
+        <item>Alex</item>
+        <item>Harry</item>
+        <item>Jack</item>
+        <item>Clark</item>
+        <item>Emil</item>
+        <item>Roger</item>
+    </string-array>
+</resources>
