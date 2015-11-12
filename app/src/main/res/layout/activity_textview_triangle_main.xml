@@ -8,7 +8,7 @@
     android:background="@mipmap/default_bg"
     tools:context=".MainActivity">
 
-    <com.ecloud.trianglerectanglelabelview.TriangleRectangleLabelView
+    <com.blue.leaves.textview.trianglerectanglelabelview.TriangleRectangleLabelView
         android:id="@+id/trv_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -23,7 +23,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
-    <com.ecloud.trianglerectanglelabelview.TriangleRectangleLabelView
+    <com.blue.leaves.textview.trianglerectanglelabelview.TriangleRectangleLabelView
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -41,7 +41,7 @@
         app:trlvRoundRectRadius="12dp"
         app:trlvRoundRectWidth="10dp" />
 
-    <com.ecloud.trianglerectanglelabelview.TriangleRectangleLabelView
+    <com.blue.leaves.textview.trianglerectanglelabelview.TriangleRectangleLabelView
         android:id="@+id/trlv1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -58,7 +58,7 @@
         app:trlvCircleColor="#95e8cd"
         app:trlvIsShowLine="true" />
 
-    <com.ecloud.trianglerectanglelabelview.TriangleRectangleLabelView
+    <com.blue.leaves.textview.trianglerectanglelabelview.TriangleRectangleLabelView
         android:id="@+id/trlv2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -75,7 +75,7 @@
         app:trlvCircleColor="#b6b2db"
         app:trlvIsShowLine="true" />
 
-    <com.ecloud.trianglerectanglelabelview.TriangleRectangleLabelView
+    <com.blue.leaves.textview.trianglerectanglelabelview.TriangleRectangleLabelView
         android:id="@+id/trlv3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -92,7 +92,7 @@
         app:trlvCircleColor="#f1cf9e"
         app:trlvIsShowLine="true" />
 
-    <com.ecloud.trianglerectanglelabelview.TriangleRectangleLabelView
+    <com.blue.leaves.textview.trianglerectanglelabelview.TriangleRectangleLabelView
         android:id="@+id/trlv4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

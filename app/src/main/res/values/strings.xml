@@ -51,4 +51,33 @@
         <item>Emil</item>
         <item>Roger</item>
     </string-array>
+
+
+    <string name="input_hint">text</string>
+    <string name="label_normal">Normal:</string>
+    <string name="label_autofit">Autofit:</string>
+    <string name="hint">Title</string>
+    <string name="text_fill">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at erat ante. In porta odio vel turpis viverra mattis. Maecenas porta porttitor magna vitae feugiat. Morbi ullamcorper dolor eu tellus porta eleifend. Praesent ultricies consequat urna, id congue diam pulvinar et. Nulla elementum risus ut tristique interdum. Phasellus ullamcorper elit eu fringilla blandit.Phasellus vitae efficitur nisl. Integer id felis sit amet nibh mollis interdum ut quis justo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla ac dignissim augue. Pellentesque ac tortor id leo dictum mattis finibus vitae dolor. Sed pharetra aliquam maximus. Vivamus ut tristique purus. Mauris commodo nisl quam, at egestas dui elementum a. Maecenas finibus, odio in bibendum blandit, nunc diam feugiat ipsum, id scelerisque purus tortor rutrum quam. Maecenas id interdum diam, ac efficitur orci. Sed nibh elit, ultrices ultricies scelerisque vitae, malesuada faucibus eros. Ut metus enim, sagittis non sapien sed, venenatis vehicula sapien. Cras rhoncus egestas dolor. Phasellus mattis ex nec congue porttitor. Suspendisse tempor lacus sit amet lectus malesuada, vel aliquam elit scelerisque.</string>
+
+    <string name="example">This is an example</string>
+
+    <string name="message">Jumping like a bawss…</string>
+    <string name="label_1">Append Jumping Dots</string>
+    <string name="label_2">Make first word jump</string>
+
+    <string name="dummy_text1">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</string>
+    <string name="dummy_text2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.\\n\\nCras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien.</string>
+    <string name="title_activity_demo">Demo</string>
+    <string name="title_demo1">In ScrollView</string>
+    <string name="title_demo2">In ListView</string>
+
+    <string name="title_activity_main">RichEditor Demo</string>
+    <string name="shimmer">Shimmer</string>
+    <string name="toggle_animation">Toggle animation</string>
+
+    <string name="title_activity_list">TextDrawable Sample</string>
+    <string name="title_activity_check_box">TextDrawable Sample</string>
+
+    <string name="loading">Loading</string>
+    <string name="email_prompt">enter a name or email address</string>
 </resources>

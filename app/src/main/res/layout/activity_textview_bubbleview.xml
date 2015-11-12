@@ -8,7 +8,7 @@
     android:layout_margin="20dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <com.github.library.bubbleview.BubbleTextVew
+    <com.blue.leaves.textview.bubbleview.BubbleTextVew
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -23,7 +23,7 @@
         app:arrowLocation="right"
         app:bubbleColor="#7EC0EE"/>
 
-    <com.github.library.bubbleview.BubbleImageView
+    <com.blue.leaves.textview.bubbleview.BubbleImageView
         android:id="@+id/bubble_image"
         android:src="@drawable/girl"
         android:layout_width="180dp"
@@ -34,7 +34,7 @@
         app:arrowPosition="15dp"
         app:arrowLocation="top" />
 
-    <com.github.library.bubbleview.BubbleLinearLayout
+    <com.blue.leaves.textview.bubbleview.BubbleLinearLayout
         android:orientation="horizontal"
         app:arrowWidth="8dp"
         app:angle="4dp"
@@ -57,8 +57,8 @@
             android:layout_gravity="center_vertical"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
-    </com.github.library.bubbleview.BubbleLinearLayout>
-    <com.github.library.bubbleview.BubbleTextVew
+    </com.blue.leaves.textview.bubbleview.BubbleLinearLayout>
+    <com.blue.leaves.textview.bubbleview.BubbleTextVew
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello BubbleTextVew"

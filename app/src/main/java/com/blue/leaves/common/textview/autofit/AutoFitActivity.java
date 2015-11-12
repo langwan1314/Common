@@ -7,6 +7,8 @@ import android.text.TextWatcher;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.blue.leaves.common.R;
+
 public class AutoFitActivity extends Activity {
 
     private TextView mOutput, mAutofitOutput;
@@ -15,7 +17,7 @@ public class AutoFitActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
+        setContentView(R.layout.activity_autofit_main);
 
         mOutput = (TextView)findViewById(R.id.output);
         mAutofitOutput = (TextView)findViewById(R.id.output_autofit);

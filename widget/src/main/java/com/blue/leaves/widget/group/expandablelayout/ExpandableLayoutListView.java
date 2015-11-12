@@ -51,28 +51,28 @@ public class ExpandableLayoutListView extends ListView {
         setOnScrollListener(new OnExpandableLayoutScrollListener());
     }
 
-    @Override
-    public boolean performItemClick(View view, int position, long id) {
-        this.position = position;
-
-        for (int index = 0; index < getChildCount(); ++index) {
-            if (index != (position - getFirstVisiblePosition())) {
-                View v = getChildAt(index);
-                ExpandableLayoutItem currentExpandableLayout = (ExpandableLayoutItem) getChildAt(index).findViewWithTag(ExpandableLayoutItem.class.getName());
-                if (currentExpandableLayout != null) currentExpandableLayout.hide();
-            }
-        }
-
-        ExpandableLayoutItem expandableLayout = (ExpandableLayoutItem) getChildAt(position - getFirstVisiblePosition()).findViewWithTag(ExpandableLayoutItem.class.getName());
-
-        if (expandableLayout.isOpened())
-            expandableLayout.hide();
-        else
-            expandableLayout.show();
-
-
-        return super.performItemClick(view, position, id);
-    }
+//    @Override
+//    public boolean performItemClick(View view, int position, long id) {
+//        this.position = position;
+//
+//        for (int index = 0; index < getChildCount(); ++index) {
+//            if (index != (position - getFirstVisiblePosition())) {
+//                View v = getChildAt(index);
+//                ExpandableLayoutItem currentExpandableLayout = (ExpandableLayoutItem) getChildAt(index).findViewWithTag(ExpandableLayoutItem.class.getName());
+//                if (currentExpandableLayout != null) currentExpandableLayout.hide();
+//            }
+//        }
+//
+//        ExpandableLayoutItem expandableLayout = (ExpandableLayoutItem) getChildAt(position - getFirstVisiblePosition()).findViewWithTag(ExpandableLayoutItem.class.getName());
+//
+//        if (false)//(expandableLayout.isOpened())
+//            expandableLayout.hide();
+//        else
+//            expandableLayout.show();
+//
+//
+//        return super.performItemClick(view, position, id);
+//    }
 
     @Override
     public void setOnScrollListener(OnScrollListener l) {

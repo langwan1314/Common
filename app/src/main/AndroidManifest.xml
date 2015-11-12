@@ -1,5 +1,6 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.blue.leaves.common">
+<manifest
+    package="com.blue.leaves.common"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application
         android:allowBackup="true"
@@ -10,13 +11,42 @@
             android:name=".MainActivity"
             android:label="@string/app_name">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".adapter.AdapterMainActivity" />
-        <activity android:name=".textview.TextViewMainActivity" />
+        <activity android:name=".adapter.AdapterMainActivity"/>
+        <activity android:name=".adapter.common.CommonAdapterMainActivity"/>
+        <activity android:name=".adapter.drag.DragExampleActivity"/>
+        <activity android:name=".adapter.recyclerbindableadapter.RecyclerBinderMainActivity"/>
+        <activity android:name=".adapter.recyclerbindableadapter.linear.LinearExampleActivity"/>
+        <activity android:name=".adapter.recyclerbindableadapter.filter.FilterExampleActivity"/>
+        <activity android:name=".adapter.recyclerbindableadapter.grid.GridExampleActivity"/>
+        <activity android:name=".adapter.recyclerbindableadapter.parallax.ParallaxExampleActivity"/>
+        <activity android:name=".adapter.recyclerbindableadapter.simple.SimpleExampleActivity"/>
+
+        <activity android:name=".textview.TextViewMainActivity"/>
+        <activity android:name=".textview.bubbleview.TextViewBubbleMainActivity"/>
+        <activity android:name=".textview.chatmessageview.ChatMainActivity"/>
+        <activity android:name=".textview.tagview.TagViewMainActivity"/>
+        <activity android:name=".textview.trianglerectanglelabelview.TriangleRectangleMainActivity"/>
+        <activity android:name=".textview.autofit.AutoFitActivity"/>
+        <activity android:name=".textview.autoscale.AutoScaleMainActivity"/>
+        <activity android:name=".textview.babushkatext.BabushkatextMainActivity"/>
+        <activity android:name=".textview.bubbletextview.BubbleTextViewMainActivity"/>
+        <activity android:name=".textview.codeinputlib.CodeInputMainActivity"/>
+        <activity android:name=".textview.expandabletextview.ExpandableTextviewDemoActivity"/>
+        <activity android:name=".textview.floatlabelededittext.FloatableEdittextMainActivity"/>
+        <activity android:name=".textview.jumpingbeans.JumpingBeanMainActivity"/>
+        <activity android:name=".textview.parkedtextview.ParkedMainActivity"/>
+        <activity android:name=".textview.richeditor.RichEditorMainActivity"/>
+        <activity android:name=".textview.shimmer.ShimmerMainActivity"/>
+        <activity android:name=".textview.sizeadjustingtextview.SizeAdjustingMainActivity"/>
+        <activity android:name=".textview.textdrawable.TextDrawableMainActivity"/>
+        <activity android:name=".textview.titanic.TitanicMainActivity"/>
+        <activity android:name=".textview.textdrawable.ListActivity"/>
+        <activity android:name=".textview.tokenautocomplete.TokenActivity"/>
     </application>
 
 </manifest>

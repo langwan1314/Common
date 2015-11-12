@@ -3,6 +3,8 @@
     <dimen name="main_activity_padding">8dp</dimen>
     <dimen name="main_activity_divider_padding">8dp</dimen>
     <dimen name="main_activity_buttons_height">64dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
 
     <!-- Linear example-->
     <dimen name="linear_example_recycler_padding">4dp</dimen>

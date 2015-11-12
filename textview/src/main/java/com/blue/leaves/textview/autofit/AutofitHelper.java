@@ -18,6 +18,8 @@ import android.util.TypedValue;
 import android.view.View;
 import android.widget.TextView;
 
+import com.blue.leaves.textview.R;
+
 import java.util.ArrayList;
 
 /**

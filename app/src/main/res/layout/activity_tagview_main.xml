@@ -22,7 +22,7 @@
         android:background="@android:color/white"
         android:visibility="visible">
 
-        <cuneyt.example.com.tagview.Tag.TagView
+        <com.blue.leaves.textview.tagview.Tag.TagView
             android:id="@+id/tag_group"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

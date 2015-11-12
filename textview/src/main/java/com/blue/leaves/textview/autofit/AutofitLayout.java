@@ -9,6 +9,8 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 
+import com.blue.leaves.textview.R;
+
 import java.util.WeakHashMap;
 
 /**

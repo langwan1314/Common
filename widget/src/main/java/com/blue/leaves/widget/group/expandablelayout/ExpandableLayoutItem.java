@@ -1,18 +1,18 @@
 /***********************************************************************************
  * The MIT License (MIT)
-
+ * <p/>
  * Copyright (c) 2014 Robin Chutaux
-
+ * <p/>
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
  * in the Software without restriction, including without limitation the rights
  * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
  * copies of the Software, and to permit persons to whom the Software is
  * furnished to do so, subject to the following conditions:
-
+ * <p/>
  * The above copyright notice and this permission notice shall be included in
  * all copies or substantial portions of the Software.
-
+ * <p/>
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
  * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -37,8 +37,7 @@ import android.widget.RelativeLayout;
 
 import com.blue.leaves.widget.R;
 
-public class ExpandableLayoutItem extends RelativeLayout
-{
+public class ExpandableLayoutItem extends RelativeLayout {
     private Boolean isAnimationRunning = false;
     private Boolean isOpened = false;
     private Integer duration;
@@ -46,25 +45,21 @@ public class ExpandableLayoutItem extends RelativeLayout
     private ViewGroup headerLayout;
     private Boolean closeByUser = true;
 
-    public ExpandableLayoutItem(Context context)
-    {
+    public ExpandableLayoutItem(Context context) {
         super(context);
     }
 
-    public ExpandableLayoutItem(Context context, AttributeSet attrs)
-    {
+    public ExpandableLayoutItem(Context context, AttributeSet attrs) {
         super(context, attrs);
         init(context, attrs);
     }
 
-    public ExpandableLayoutItem(Context context, AttributeSet attrs, int defStyle)
-    {
+    public ExpandableLayoutItem(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
         init(context, attrs);
     }
 
-    private void init(final Context context, AttributeSet attrs)
-    {
+    private void init(final Context context, AttributeSet attrs) {
         final View rootView = View.inflate(context, R.layout.view_expandable, this);
         headerLayout = (ViewGroup) rootView.findViewById(R.id.view_expandable_headerlayout);
         final TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.ExpandableLayout);
@@ -88,15 +83,15 @@ public class ExpandableLayoutItem extends RelativeLayout
         contentLayout.addView(contentView);
         contentLayout.setVisibility(GONE);
 
-        headerLayout.setOnTouchListener(new OnTouchListener()
-        {
+        headerLayout.setOnTouchListener(new OnTouchListener() {
             @Override
-            public boolean onTouch(View v, MotionEvent event)
-            {
-                if (isOpened() && event.getAction() == MotionEvent.ACTION_UP)
-                {
+            public boolean onTouch(View v, MotionEvent event) {
+                if (isOpened() && event.getAction() == MotionEvent.ACTION_DOWN) {
                     hide();
                     closeByUser = true;
+                } else if (isOpened() == false && event.getAction() == MotionEvent.ACTION_DOWN) {
+                    show();
+                    closeByUser = false;
                 }
 
                 return isOpened() && event.getAction() == MotionEvent.ACTION_DOWN;
@@ -105,19 +100,16 @@ public class ExpandableLayoutItem extends RelativeLayout
 
     }
 
-    private void expand(final View v)
-    {
+    private void expand(final View v) {
         isOpened = true;
         v.measure(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT);
         final int targetHeight = v.getMeasuredHeight();
         v.getLayoutParams().height = 0;
         v.setVisibility(VISIBLE);
 
-        Animation animation = new Animation()
-        {
+        Animation animation = new Animation() {
             @Override
-            protected void applyTransformation(float interpolatedTime, Transformation t)
-            {
+            protected void applyTransformation(float interpolatedTime, Transformation t) {
                 v.getLayoutParams().height = (interpolatedTime == 1) ? LayoutParams.WRAP_CONTENT : (int) (targetHeight * interpolatedTime);
                 v.requestLayout();
             }
@@ -132,21 +124,17 @@ public class ExpandableLayoutItem extends RelativeLayout
         v.startAnimation(animation);
     }
 
-    private void collapse(final View v)
-    {
+    private void collapse(final View v) {
         isOpened = false;
         final int initialHeight = v.getMeasuredHeight();
-        Animation animation = new Animation()
-        {
+        Animation animation = new Animation() {
             @Override
             protected void applyTransformation(float interpolatedTime, Transformation t) {
-                if(interpolatedTime == 1)
-                {
+                if (interpolatedTime == 1) {
                     v.setVisibility(View.GONE);
                     isOpened = false;
-                }
-                else{
-                    v.getLayoutParams().height = initialHeight - (int)(initialHeight * interpolatedTime);
+                } else {
+                    v.getLayoutParams().height = initialHeight - (int) (initialHeight * interpolatedTime);
                     v.requestLayout();
                 }
             }
@@ -161,18 +149,15 @@ public class ExpandableLayoutItem extends RelativeLayout
         v.startAnimation(animation);
     }
 
-    public void hideNow()
-    {
+    public void hideNow() {
         contentLayout.getLayoutParams().height = 0;
         contentLayout.invalidate();
         contentLayout.setVisibility(View.GONE);
         isOpened = false;
     }
 
-    public void showNow()
-    {
-        if (!this.isOpened())
-        {
+    public void showNow() {
+        if (!this.isOpened()) {
             contentLayout.setVisibility(VISIBLE);
             this.isOpened = true;
             contentLayout.getLayoutParams().height = LayoutParams.WRAP_CONTENT;
@@ -180,49 +165,38 @@ public class ExpandableLayoutItem extends RelativeLayout
         }
     }
 
-    public Boolean isOpened()
-    {
+    public Boolean isOpened() {
         return isOpened;
     }
 
-    public void show()
-    {
-        if (!isAnimationRunning)
-        {
+    public void show() {
+        if (!isAnimationRunning) {
             expand(contentLayout);
             isAnimationRunning = true;
-            new Handler().postDelayed(new Runnable()
-            {
+            new Handler().postDelayed(new Runnable() {
                 @Override
-                public void run()
-                {
+                public void run() {
                     isAnimationRunning = false;
                 }
             }, duration);
         }
     }
 
-    public ViewGroup getHeaderLayout()
-    {
+    public ViewGroup getHeaderLayout() {
         return headerLayout;
     }
 
-    public ViewGroup getContentLayout()
-    {
+    public ViewGroup getContentLayout() {
         return contentLayout;
     }
 
-    public void hide()
-    {
-        if (!isAnimationRunning)
-        {
+    public void hide() {
+        if (!isAnimationRunning) {
             collapse(contentLayout);
             isAnimationRunning = true;
-            new Handler().postDelayed(new Runnable()
-            {
+            new Handler().postDelayed(new Runnable() {
                 @Override
-                public void run()
-                {
+                public void run() {
                     isAnimationRunning = false;
                 }
             }, duration);
@@ -230,8 +204,7 @@ public class ExpandableLayoutItem extends RelativeLayout
         closeByUser = false;
     }
 
-    public Boolean getCloseByUser()
-    {
+    public Boolean getCloseByUser() {
         return closeByUser;
     }
 }

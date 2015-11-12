@@ -1,6 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/app/src/main/assets" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/blue/leaves/common/textview/autofit/AutoFitActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/blue/leaves/common/textview/babushkatext/BabushkatextMainActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/blue/leaves/common/textview/floatlabelededittext/FloatAblededittextMainActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/blue/leaves/common/textview/floatlabelededittext/FloatableEdittextMainActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/blue/leaves/common/textview/textdrawable/ListActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/blue/leaves/common/textview/textdrawable/TextDrawableMainActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/blue/leaves/common/textview/textdrawable/sample/DataItem.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/blue/leaves/common/textview/textdrawable/sample/DataSource.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/blue/leaves/common/textview/textdrawable/sample/DrawableProvider.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/blue/leaves/common/textview/titanic/Typefaces.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/blue/leaves/common/textview/tokenautocomplete/ContactsCompletionView.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/blue/leaves/common/textview/tokenautocomplete/Person.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/blue/leaves/common/textview/tokenautocomplete/TokenActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/blue/leaves/common/textview/trianglerectanglelabelview/MainActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/check_alpha.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/check_sm.9.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/check_sm1.9.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_action_next_item.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/token_background.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/token_default.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/token_selected.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_autofit_main.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_babushkatextmain.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_floatlabeledittext_main.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_text_drawable_main.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_textdrawable_list.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_titanic_main.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_tokenautocomplete_main.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/contact_token.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/person_layout.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/text_drawable_list_item_layout.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/menu/check_box.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/menu/list.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/textview/src/main/java/com/blue/leaves/textview/autofit/AutofitHelper.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/textview/src/main/java/com/blue/leaves/textview/autofit/AutofitLayout.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/textview/src/main/java/com/blue/leaves/textview/autofit/AutofitTextView.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/textview/src/main/java/com/blue/leaves/textview/babushkatext/BabushkaText.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/textview/src/main/java/com/blue/leaves/textview/floatlabelededittext/FloatLabeledEditText.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/textview/src/main/java/com/blue/leaves/textview/floatlabelededittext/Utils.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/textview/src/main/java/com/blue/leaves/textview/textdrawable/TextDrawable.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/textview/src/main/java/com/blue/leaves/textview/textdrawable/util/ColorGenerator.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/textview/src/main/java/com/blue/leaves/textview/titanic/Titanic.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/textview/src/main/java/com/blue/leaves/textview/titanic/TitanicTextView.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/textview/src/main/java/com/blue/leaves/textview/tokenautocomplete/FilteredArrayAdapter.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/textview/src/main/java/com/blue/leaves/textview/tokenautocomplete/TokenCompleteTextView.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/textview/src/main/res/drawable-sw600dp/wave.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/textview/src/main/res/values/autofit_attrs.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/textview/src/main/res/values/floatlabeledittext_attrs.xml" charset="GBK" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

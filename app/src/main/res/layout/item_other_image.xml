@@ -6,7 +6,7 @@
     android:orientation="vertical"
     android:padding="3dp">
 
-    <me.himanshusoni.chatmessageview.ChatMessageView
+    <com.blue.leaves.textview.chatmessageview.chatmessageview.ChatMessageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:cmv_arrowGravity="start"
@@ -22,6 +22,6 @@
             android:layout_height="wrap_content"
             android:background="#aaffffff"
             android:src="@mipmap/ic_launcher" />
-    </me.himanshusoni.chatmessageview.ChatMessageView>
+    </com.blue.leaves.textview.chatmessageview.chatmessageview.ChatMessageView>
 
 </LinearLayout>

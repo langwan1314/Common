@@ -1,4 +1,13 @@
 <resources>
 
+    <style name="floatlabelededittext">
+        <item name="android:textColor">#FF0000</item>
+    </style>
 
+    <style name="TextAppearance.DemoText" parent="TextAppearance.AppCompat.Large">
+        <item name="android:textColor">#BB000000</item>
+    </style>
+
+    <style name="MyTextView">
+    </style>
 </resources>
