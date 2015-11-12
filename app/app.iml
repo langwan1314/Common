@@ -98,6 +98,7 @@
     <orderEntry type="library" exported="" name="support-annotations-23.1.0" level="project" />
     <orderEntry type="module" module-name="textview" exported="" />
     <orderEntry type="module" module-name="util" exported="" />
+    <orderEntry type="module" module-name="animation" exported="" />
     <orderEntry type="module" module-name="adapter" exported="" />
     <orderEntry type="module" module-name="widget" exported="" />
   </component>

@@ -47,6 +47,22 @@
         <activity android:name=".textview.titanic.TitanicMainActivity"/>
         <activity android:name=".textview.textdrawable.ListActivity"/>
         <activity android:name=".textview.tokenautocomplete.TokenActivity"/>
+
+        <activity android:name=".animation.AnimationMainActivity"/>
+        <activity android:name=".animation.flip.demo.FlipAsyncContentActivity"/>
+        <activity android:name=".animation.flip.demo.FlipButtonActivity"/>
+        <activity android:name=".animation.flip.demo.FlipComplexLayoutActivity"/>
+        <activity android:name=".animation.flip.demo.FlipDeleteAdapterActivity"/>
+        <activity android:name=".animation.flip.demo.FlipDynamicAdapterActivity"/>
+        <activity android:name=".animation.flip.demo.FlipFragmentActivity"/>
+        <activity android:name=".animation.flip.demo.FlipHorizontalLayoutActivity"/>
+        <activity android:name=".animation.flip.demo.FlipMainActivity"/>
+        <activity android:name=".animation.flip.demo.FlipTextViewActivity"/>
+        <activity android:name=".animation.flip.demo.FlipTextViewAltActivity"/>
+        <activity android:name=".animation.flip.demo.FlipTextViewXmlActivity"/>
+        <activity android:name=".animation.flip.demo.FlipWebViewActivity"/>
+        <activity android:name=".animation.flip.demo.Issue51Activity"/>
+        <activity android:name=".animation.flip.demo.Issue5Activity"/>
     </application>
 
 </manifest>

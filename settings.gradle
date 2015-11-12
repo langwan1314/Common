@@ -1,1 +1,1 @@
-include ':app', ':util', ':adapter', ':textview', ':widget', ':nineoldandroids'
+include ':app', ':util', ':adapter', ':textview', ':widget', ':nineoldandroids', ':animation'

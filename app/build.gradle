@@ -35,4 +35,5 @@ dependencies {
     compile project(':util')
     compile project(':textview')
     compile project(':widget')
+    compile project(':animation')
 }

@@ -11,15 +11,16 @@ import android.widget.ListView;
 import android.widget.AdapterView.OnItemClickListener;
 
 import com.blue.leaves.common.adapter.AdapterMainActivity;
+import com.blue.leaves.common.animation.AnimationMainActivity;
 import com.blue.leaves.common.textview.TextViewMainActivity;
 
 public class MainActivity extends Activity {
 
     private ListView mListView = null;
     private String[] mListString = {
-            "adapter", "textView"
+            "adapter", "textView", "animation"
     };
-    private Class[] mListClass = {AdapterMainActivity.class, TextViewMainActivity.class};
+    private Class[] mListClass = {AdapterMainActivity.class, TextViewMainActivity.class, AnimationMainActivity.class};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

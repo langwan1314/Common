@@ -4,7 +4,6 @@
     <file url="file://$PROJECT_DIR$/app/src/main/assets" charset="GBK" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/com/blue/leaves/common/textview/autofit/AutoFitActivity.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/com/blue/leaves/common/textview/babushkatext/BabushkatextMainActivity.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/app/src/main/java/com/blue/leaves/common/textview/floatlabelededittext/FloatAblededittextMainActivity.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/com/blue/leaves/common/textview/floatlabelededittext/FloatableEdittextMainActivity.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/com/blue/leaves/common/textview/textdrawable/ListActivity.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/com/blue/leaves/common/textview/textdrawable/TextDrawableMainActivity.java" charset="GBK" />
@@ -15,7 +14,6 @@
     <file url="file://$PROJECT_DIR$/app/src/main/java/com/blue/leaves/common/textview/tokenautocomplete/ContactsCompletionView.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/com/blue/leaves/common/textview/tokenautocomplete/Person.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/com/blue/leaves/common/textview/tokenautocomplete/TokenActivity.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/app/src/main/java/com/blue/leaves/common/textview/trianglerectanglelabelview/MainActivity.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/check_alpha.png" charset="GBK" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/check_sm.9.png" charset="GBK" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/check_sm1.9.png" charset="GBK" />
@@ -48,6 +46,8 @@
     <file url="file://$PROJECT_DIR$/textview/src/main/java/com/blue/leaves/textview/tokenautocomplete/FilteredArrayAdapter.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/textview/src/main/java/com/blue/leaves/textview/tokenautocomplete/TokenCompleteTextView.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/textview/src/main/res/drawable-sw600dp/wave.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/textview/src/main/res/drawable/wave.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/textview/src/main/res/mipmap/wave.png" charset="GBK" />
     <file url="file://$PROJECT_DIR$/textview/src/main/res/values/autofit_attrs.xml" charset="GBK" />
     <file url="file://$PROJECT_DIR$/textview/src/main/res/values/floatlabeledittext_attrs.xml" charset="GBK" />
     <file url="PROJECT" charset="UTF-8" />
