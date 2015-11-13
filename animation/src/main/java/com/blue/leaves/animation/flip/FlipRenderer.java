@@ -42,7 +42,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 
  */
-public class FlipRenderer implements GLSurfaceView.Renderer {
+public class FlipRenderer implements GLSurfaceView.Renderer {//Surface相关的一些管理
 
   private FlipViewController flipViewController;
 
@@ -139,7 +139,7 @@ public class FlipRenderer implements GLSurfaceView.Renderer {
   }
 
   public void updateTexture(int frontIndex, View frontView, int backIndex, View backView) {
-    if (created) {
+    if (created) {//有onSurfaceChanged时需要重新reload
       cards.reloadTexture(frontIndex, frontView, backIndex, backView);
       flipViewController.getSurfaceView().requestRender();
     }

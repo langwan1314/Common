@@ -28,10 +28,10 @@ import junit.framework.Assert;
 
 import javax.microedition.khronos.opengles.GL10;
 
-public class FlipCards {
+public class FlipCards {//主要用于前后两个Item View的card管理，以及绘制流程的控制，触摸时的管理
 
   private static final float ACCELERATION = 0.65f;
-  private static final float MOVEMENT_RATE = 1.5f;
+  private static final float MOVEMENT_RATE = 1.0f;//控制触摸滑动时候的速度
   private static final int MAX_TIP_ANGLE = 60;
   private static final int MAX_TOUCH_MOVE_ANGLE = 15;
   private static final float MIN_MOVEMENT = 4f;
@@ -118,7 +118,7 @@ public class FlipCards {
     backCards.resetWithIndex(backCards.getIndex());
   }
 
-  public void reloadTexture(int frontIndex, View frontView, int backIndex, View backView) {
+  public void reloadTexture(int frontIndex, View frontView, int backIndex, View backView) {//重新加载前后 item view 的纹理
     synchronized (this) {
       boolean
           frontChanged =
@@ -151,12 +151,12 @@ public class FlipCards {
     setVisible(false);
     setState(STATE_INIT);
     accumulatedAngle = selection * 180;
-    frontCards.resetWithIndex(selection);
-    backCards.resetWithIndex(selection + 1 < maxIndex ? selection + 1 : -1);
+    frontCards.resetWithIndex(selection);//设置frontCard
+    backCards.resetWithIndex(selection + 1 < maxIndex ? selection + 1 : -1);//设置backCards
     controller.postHideFlipAnimation();
   }
 
-  public synchronized void draw(FlipRenderer renderer, GL10 gl) {
+  public synchronized void draw(FlipRenderer renderer, GL10 gl) {//翻转时前后的card绘制
     frontCards.buildTexture(renderer, gl);
     backCards.buildTexture(renderer, gl);
 
@@ -165,7 +165,7 @@ public class FlipCards {
       return;
     }
 
-    if (!visible) {
+    if (!visible) {//是否可见
       return;
     }
 
@@ -203,7 +203,7 @@ public class FlipCards {
               if (accumulatedAngle >= backCards.getIndex() * 180) { //moved to the next page
                 accumulatedAngle = backCards.getIndex() * 180;
                 setState(STATE_INIT);
-                controller.postFlippedToView(backCards.getIndex());
+                controller.postFlippedToView(backCards.getIndex());//翻滚到下一页
 
                 swapCards();
                 backCards.resetWithIndex(frontCards.getIndex() + 1);
@@ -274,7 +274,7 @@ public class FlipCards {
     backCards.abandonTexture();
   }
 
-  public synchronized boolean handleTouchEvent(MotionEvent event, boolean isOnTouchEvent) {
+  public synchronized boolean handleTouchEvent(MotionEvent event, boolean isOnTouchEvent) {//处理触摸事件
     switch (event.getAction()) {
       case MotionEvent.ACTION_DOWN:
         // remember page we started on...
@@ -296,7 +296,7 @@ public class FlipCards {
             forward = delta > 0;
           }
 
-          controller.showFlipAnimation();
+          controller.showFlipAnimation();//显示翻页动画
 
           float angleDelta;
           if (orientationVertical) {
@@ -306,18 +306,18 @@ public class FlipCards {
           }
 
           if (Math.abs(angleDelta)
-              > MAX_TOUCH_MOVE_ANGLE) //prevent large delta when moving too fast
+              > MAX_TOUCH_MOVE_ANGLE) //prevent large delta when moving too fast 最大移动角度
           {
-            angleDelta = Math.signum(angleDelta) * MAX_TOUCH_MOVE_ANGLE;
+            angleDelta = Math.signum(angleDelta) * MAX_TOUCH_MOVE_ANGLE;//sin值乘以最大角度(小于15)
           }
 
           // do not flip more than one page with one touch...
-          if (Math.abs(getPageIndexFromAngle(accumulatedAngle + angleDelta) - lastPageIndex) <= 1) {
+          if (Math.abs(getPageIndexFromAngle(accumulatedAngle + angleDelta) - lastPageIndex) <= 1) {//一次滑动不能超过一页
             accumulatedAngle += angleDelta;
           }
 
           //Bounce the page for the first and the last page
-          if (frontCards.getIndex() == maxIndex - 1) { //the last page
+          if (frontCards.getIndex() == maxIndex - 1) { //the last page 滑动到最后一页
             if (accumulatedAngle > frontCards.getIndex() * 180) {
               accumulatedAngle =
                   Math.min(accumulatedAngle,
@@ -332,18 +332,18 @@ public class FlipCards {
                 Math.max(accumulatedAngle, controller.isOverFlipEnabled() ? -MAX_TIP_ANGLE : 0);
           }
 
-          int anglePageIndex = getPageIndexFromAngle(accumulatedAngle);
+          int anglePageIndex = getPageIndexFromAngle(accumulatedAngle);//通过角度获取页
 
           if (accumulatedAngle >= 0) {
-            if (anglePageIndex != frontCards.getIndex()) {
-              if (anglePageIndex == frontCards.getIndex() - 1) { //moved to previous page
+            if (anglePageIndex != frontCards.getIndex()) {//需要翻页?
+              if (anglePageIndex == frontCards.getIndex() - 1) { //moved to previous page翻转到前面一页
                 swapCards(); //frontCards becomes the backCards
                 frontCards.resetWithIndex(backCards.getIndex() - 1);
                 controller.flippedToView(anglePageIndex, false);
-              } else if (anglePageIndex == frontCards.getIndex() + 1) { //moved to next page
-                swapCards();
-                backCards.resetWithIndex(frontCards.getIndex() + 1);
-                controller.flippedToView(anglePageIndex, false);
+              } else if (anglePageIndex == frontCards.getIndex() + 1) { //moved to next page翻转到后面一页
+                swapCards();//交换页
+                backCards.resetWithIndex(frontCards.getIndex() + 1);//重置backCard
+                controller.flippedToView(anglePageIndex, false);//滑动到anglePageIndex页
               } else {
                 throw new RuntimeException(AphidLog.format(
                     "Inconsistent states: anglePageIndex: %d, accumulatedAngle %.1f, frontCards %d, backCards %d",
@@ -378,7 +378,7 @@ public class FlipCards {
     return false;
   }
 
-  private void swapCards() {
+  private void swapCards() {//交换前后card
     ViewDualCards tmp = frontCards;
     frontCards = backCards;
     backCards = tmp;

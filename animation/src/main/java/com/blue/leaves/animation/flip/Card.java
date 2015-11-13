@@ -49,7 +49,7 @@ import static javax.microedition.khronos.opengles.GL10.GL_TRIANGLES;
 import static javax.microedition.khronos.opengles.GL10.GL_UNSIGNED_SHORT;
 import static javax.microedition.khronos.opengles.GL10.GL_VERTEX_ARRAY;
 
-public class Card {
+public class Card {//最终的纹理及坐标都是设置到这个类里面
 
     public static final int AXIS_TOP = 0;
     public static final int AXIS_BOTTOM = 1;
@@ -164,7 +164,7 @@ public class Card {
             gl.glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
             gl.glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
             gl.glTexCoordPointer(2, GL_FLOAT, 0, textureBuffer);
-            gl.glBindTexture(GL_TEXTURE_2D, texture.getId()[0]);
+            gl.glBindTexture(GL_TEXTURE_2D, texture.getId()[0]);//绑定纹理
         }
 
         if (AphidLog.ENABLE_DEBUG) {
@@ -284,7 +284,7 @@ public class Card {
         gl.glDisable(GL_CULL_FACE);
     }
 
-    private void updateVertices() {
+    private void updateVertices() {//更新坐标数组
         vertexBuffer = toFloatBuffer(cardVertices);
         indexBuffer = toShortBuffer(indices);
         textureBuffer = toFloatBuffer(textureCoordinates);

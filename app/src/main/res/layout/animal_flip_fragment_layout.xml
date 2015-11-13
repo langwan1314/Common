@@ -13,7 +13,7 @@
 	  android:text="@string/hide_fragment"
 		/>
 	
-	<fragment android:name="com.aphidmobile.flip.demo.fragment.FlipTextViewFragment"
+	<fragment android:name="com.blue.leaves.common.animation.flip.demo.fragment.FlipTextViewFragment"
 	          android:id="@+id/flip_text_view_fragment"
 	          android:layout_height="match_parent"
 	          android:layout_width="match_parent"

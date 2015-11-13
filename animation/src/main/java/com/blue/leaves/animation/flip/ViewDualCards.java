@@ -30,7 +30,7 @@ import javax.microedition.khronos.opengles.GL10;
 
 import static com.blue.leaves.animation.flip.FlipRenderer.checkError;
 
-public class ViewDualCards {
+public class ViewDualCards {//主要用于纹理的绑定与加载，以及把一个View通过纹理坐标进行上下屏或左右屏的绘制
 
   private int index = -1;
   private WeakReference<View> viewRef;
@@ -64,7 +64,7 @@ public class ViewDualCards {
     recycleTexture();
   }
 
-  synchronized boolean loadView(int index, View view, Bitmap.Config format) {
+  synchronized boolean loadView(int index, View view, Bitmap.Config format) {//构造view的截图效果
     UI.assertInMainThread();
 
     if (this.index == index
@@ -104,7 +104,7 @@ public class ViewDualCards {
     return bottomCard;
   }
 
-  public synchronized void buildTexture(FlipRenderer renderer, GL10 gl) {
+  public synchronized void buildTexture(FlipRenderer renderer, GL10 gl) {//绑定纹理，并设置顶部和底部的  纹理坐标
     if (screenshot != null) {
       if (texture != null) {
         texture.destroy(gl);

@@ -3,6 +3,8 @@ package com.blue.leaves.util;
 import android.app.ActivityManager;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.Canvas;
 import android.net.Uri;
 import android.net.wifi.WifiManager;
 import android.util.Base64;
@@ -232,5 +234,29 @@ public final class Common {
         return ((ActivityManager) context.getSystemService(
                 Context.ACTIVITY_SERVICE))
                 .getLargeMemoryClass();
+    }
+
+
+    /**
+     * 获取一个view的截图
+     *
+     * @param view 要获取截图效果的view
+     * @param config 相应的位图格式,如RGB_565等
+     */
+    public static Bitmap takeScreenshot(View view, Bitmap.Config config) {//获取相应view为一个bitmap
+        int width = view.getWidth();
+        int height = view.getHeight();
+
+        if (view != null && width > 0 && height > 0) {
+            Bitmap bitmap = Bitmap.createBitmap(width, height, config);
+            Canvas canvas = new Canvas(bitmap);
+            view.draw(canvas);
+
+            //canvas.drawColor(Color.RED, PorterDuff.Mode.DARKEN); //NOTES: debug option
+
+            return bitmap;
+        } else {
+            return null;
+        }
     }
 }

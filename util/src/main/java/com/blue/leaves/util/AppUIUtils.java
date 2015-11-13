@@ -3,6 +3,7 @@ package com.blue.leaves.util;
 import android.app.Activity;
 import android.content.Context;
 import android.os.Build;
+import android.os.Looper;
 import android.util.DisplayMetrics;
 import android.view.View;
 import android.view.View.MeasureSpec;
@@ -33,7 +34,6 @@ public class AppUIUtils {
     public static int getScreenHeight(Context context) {
         return context.getResources().getDisplayMetrics().heightPixels;
     }
-
 
 
     public static int dip2px(float density, float dipValue) {
@@ -73,7 +73,7 @@ public class AppUIUtils {
 
     /**
      * 获取屏幕分辨率信息
-     * */
+     */
     public static DisplayMetrics getDeviceDisplayMetrics(
             Context context) {
         android.view.WindowManager windowsManager = (android.view.WindowManager) context
@@ -88,7 +88,7 @@ public class AppUIUtils {
 
     /**
      * 获取手机状态栏高度
-     * */
+     */
     public static int getStatusBarHeight(Context context) {
         Class<?> c = null;
         Object obj = null;
@@ -110,7 +110,7 @@ public class AppUIUtils {
 
     /**
      * View width:Macth_Parent Height:wrap_content
-     * */
+     */
     public static void measureView(final View child) {
         ViewGroup.LayoutParams p = child.getLayoutParams();
         if (p == null) {
@@ -135,7 +135,7 @@ public class AppUIUtils {
 
     // 转换dip为px
     public static int convertDipToPx(Context context,
-            int dip) {
+                                     int dip) {
         float scale = context.getResources()
                 .getDisplayMetrics().density;
         return (int) (dip * scale + 0.5f * (dip >= 0 ? 1
@@ -165,7 +165,7 @@ public class AppUIUtils {
 
     /**
      * 隐藏控制栏
-     * 
+     *
      * @param acticity
      */
     public static void hideSystemBars(Activity acticity) {
@@ -182,7 +182,7 @@ public class AppUIUtils {
 
     /**
      * 显示控制栏
-     * 
+     *
      * @param acticity
      */
     public static void showSystemBars(Activity activity) {
@@ -194,7 +194,7 @@ public class AppUIUtils {
 
     /**
      * 获取屏幕的物理尺寸(以寸为单位)
-     * 
+     *
      * @return
      */
     public static double getScreenInch(Context context) {
@@ -238,4 +238,14 @@ public class AppUIUtils {
         return screenSizeDP;
     }
 
+    /*是否在应用程序的主线程*/
+    public static boolean isMainThread() {
+        return Looper.myLooper() == Looper.getMainLooper();
+    }
+
+    public static void assertInMainThread() {
+        if (!isMainThread()) {
+            throw new RuntimeException("Main thread assertion failed");
+        }
+    }
 }

@@ -839,6 +839,35 @@ public class FileUtil {
         return false;
     }
 
+    /*从输入流读取一个bitmap对象返回*/
+    public static Bitmap readBitmap(InputStream input) {
+        if (input == null) {
+            return null;
+        }
+
+        try {
+            return BitmapFactory.decodeStream(input);
+        } catch (Exception e) {
+            // Log.e(e, "Failed to read bitmap");
+            return null;
+        } finally {
+            try {
+                input.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    /*从资源管理器中读取一个名字为name的bitmap对象返回*/
+    public static Bitmap readBitmap(AssetManager manager, String name) {
+        try {
+            return readBitmap(manager.open(name));
+        } catch (IOException e) {
+            return null;
+        }
+    }
+
     public static boolean saveBitmap(Context context, Bitmap bmp,
                                      String bitName) {
         String path = StorageUtil.getPicDir(context) + "/"

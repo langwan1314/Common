@@ -27,7 +27,7 @@ public class GrabIt {
   private GrabIt() {
   }
 
-  public static Bitmap takeScreenshot(View view, Bitmap.Config config) {
+  public static Bitmap takeScreenshot(View view, Bitmap.Config config) {//获取相应view为一个bitmap
     int width = view.getWidth();
     int height = view.getHeight();
 
