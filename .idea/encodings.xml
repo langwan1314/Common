@@ -46,8 +46,6 @@
     <file url="file://$PROJECT_DIR$/textview/src/main/java/com/blue/leaves/textview/tokenautocomplete/FilteredArrayAdapter.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/textview/src/main/java/com/blue/leaves/textview/tokenautocomplete/TokenCompleteTextView.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/textview/src/main/res/drawable-sw600dp/wave.png" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/textview/src/main/res/drawable/wave.png" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/textview/src/main/res/mipmap/wave.png" charset="GBK" />
     <file url="file://$PROJECT_DIR$/textview/src/main/res/values/autofit_attrs.xml" charset="GBK" />
     <file url="file://$PROJECT_DIR$/textview/src/main/res/values/floatlabeledittext_attrs.xml" charset="GBK" />
     <file url="PROJECT" charset="UTF-8" />
