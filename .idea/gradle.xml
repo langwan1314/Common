@@ -9,10 +9,10 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/NineOldAndroids" />
             <option value="$PROJECT_DIR$/adapter" />
             <option value="$PROJECT_DIR$/animation" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/nineOldAndroids" />
             <option value="$PROJECT_DIR$/stickylistheaders" />
             <option value="$PROJECT_DIR$/textview" />
             <option value="$PROJECT_DIR$/util" />
