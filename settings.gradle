@@ -1,1 +1,1 @@
-include ':nineOldAndroids', ':adapter', ':animation', ':app', ':textview', ':util', ':widget'
+include ':nineOldAndroids', ':adapter', ':animation', ':app', ':textview', ':util', ':widget', ':stickylistheaders'

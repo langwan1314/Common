@@ -222,4 +222,21 @@
         <item>"Android provides a rich application framework that allows you to build innovative apps and games for mobile devices in a Java language environment. The documents listed in the left navigation provide details about how to build apps using Android's various APIs."</item>
         <item>"test"</item>
     </string-array>
+
+
+    <string-array name="appearance_examples">
+        <item>Alpha</item>
+        <item>Left</item>
+        <item>Right</item>
+        <item>Bottom</item>
+        <item>Bottom right</item>
+        <item>Scale</item>
+    </string-array>
+
+    <string-array name="swipedismiss">
+        <item>Swipe-To-Dismiss</item>
+        <item>Contextual Undo</item>
+        <item>CU - Timed Delete</item>
+    </string-array>
+
 </resources>

@@ -1,7 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/animation/src/main/java/com/blue/leaves/animation/basic/BaseViewAnimator.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/animation/src/main/java/com/blue/leaves/animation/basic/Techniques.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/animation/src/main/java/com/blue/leaves/animation/basic/YoYo.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/animation/src/main/java/com/blue/leaves/animation/basic/attention/BounceAnimator.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/animation/src/main/java/com/blue/leaves/animation/basic/attention/FlashAnimator.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/animation/src/main/java/com/blue/leaves/animation/basic/attention/PulseAnimator.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/animation/src/main/java/com/blue/leaves/animation/basic/attention/RubberBandAnimator.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/animation/src/main/java/com/blue/leaves/animation/basic/attention/ShakeAnimator.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/animation/src/main/java/com/blue/leaves/animation/basic/attention/StandUpAnimator.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/animation/src/main/java/com/blue/leaves/animation/basic/attention/SwingAnimator.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/animation/src/main/java/com/blue/leaves/animation/basic/attention/TadaAnimator.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/animation/src/main/java/com/blue/leaves/animation/basic/attention/WaveAnimator.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/animation/src/main/java/com/blue/leaves/animation/basic/attention/WobbleAnimator.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/animation/src/main/java/com/blue/leaves/animation/basic/bouncing_entrances/BounceInAnimator.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/animation/src/main/java/com/blue/leaves/animation/basic/bouncing_entrances/BounceInDownAnimator.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/animation/src/main/java/com/blue/leaves/animation/basic/bouncing_entrances/BounceInLeftAnimator.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/animation/src/main/java/com/blue/leaves/animation/basic/bouncing_entrances/BounceInRightAnimator.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/animation/src/main/java/com/blue/leaves/animation/basic/bouncing_entrances/BounceInUpAnimator.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/animation/src/main/java/com/blue/leaves/animation/basic/fading_entrances/FadeInAnimator.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/animation/src/main/java/com/blue/leaves/animation/basic/fading_entrances/FadeInDownAnimator.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/animation/src/main/java/com/blue/leaves/animation/basic/fading_entrances/FadeInLeftAnimator.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/animation/src/main/java/com/blue/leaves/animation/basic/fading_entrances/FadeInRightAnimator.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/animation/src/main/java/com/blue/leaves/animation/basic/fading_entrances/FadeInUpAnimator.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/animation/src/main/java/com/blue/leaves/animation/basic/fading_exits/FadeOutAnimator.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/animation/src/main/java/com/blue/leaves/animation/basic/fading_exits/FadeOutDownAnimator.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/animation/src/main/java/com/blue/leaves/animation/basic/fading_exits/FadeOutLeftAnimator.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/animation/src/main/java/com/blue/leaves/animation/basic/fading_exits/FadeOutRightAnimator.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/animation/src/main/java/com/blue/leaves/animation/basic/fading_exits/FadeOutUpAnimator.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/animation/src/main/java/com/blue/leaves/animation/basic/flippers/FlipInXAnimator.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/animation/src/main/java/com/blue/leaves/animation/basic/flippers/FlipInYAnimator.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/animation/src/main/java/com/blue/leaves/animation/basic/flippers/FlipOutXAnimator.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/animation/src/main/java/com/blue/leaves/animation/basic/flippers/FlipOutYAnimator.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/animation/src/main/java/com/blue/leaves/animation/basic/rotating_entrances/RotateInAnimator.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/animation/src/main/java/com/blue/leaves/animation/basic/rotating_entrances/RotateInDownLeftAnimator.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/animation/src/main/java/com/blue/leaves/animation/basic/rotating_entrances/RotateInDownRightAnimator.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/animation/src/main/java/com/blue/leaves/animation/basic/rotating_entrances/RotateInUpLeftAnimator.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/animation/src/main/java/com/blue/leaves/animation/basic/rotating_entrances/RotateInUpRightAnimator.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/animation/src/main/java/com/blue/leaves/animation/basic/rotating_exits/RotateOutAnimator.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/animation/src/main/java/com/blue/leaves/animation/basic/rotating_exits/RotateOutDownLeftAnimator.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/animation/src/main/java/com/blue/leaves/animation/basic/rotating_exits/RotateOutDownRightAnimator.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/animation/src/main/java/com/blue/leaves/animation/basic/rotating_exits/RotateOutUpLeftAnimator.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/animation/src/main/java/com/blue/leaves/animation/basic/rotating_exits/RotateOutUpRightAnimator.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/animation/src/main/java/com/blue/leaves/animation/basic/sliders/SlideInDownAnimator.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/animation/src/main/java/com/blue/leaves/animation/basic/sliders/SlideInLeftAnimator.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/animation/src/main/java/com/blue/leaves/animation/basic/sliders/SlideInRightAnimator.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/animation/src/main/java/com/blue/leaves/animation/basic/sliders/SlideInUpAnimator.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/animation/src/main/java/com/blue/leaves/animation/basic/sliders/SlideOutDownAnimator.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/animation/src/main/java/com/blue/leaves/animation/basic/sliders/SlideOutLeftAnimator.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/animation/src/main/java/com/blue/leaves/animation/basic/sliders/SlideOutRightAnimator.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/animation/src/main/java/com/blue/leaves/animation/basic/sliders/SlideOutUpAnimator.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/animation/src/main/java/com/blue/leaves/animation/basic/specials/HingeAnimator.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/animation/src/main/java/com/blue/leaves/animation/basic/specials/RollInAnimator.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/animation/src/main/java/com/blue/leaves/animation/basic/specials/RollOutAnimator.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/animation/src/main/java/com/blue/leaves/animation/basic/specials/in/DropOutAnimator.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/animation/src/main/java/com/blue/leaves/animation/basic/specials/in/LandingAnimator.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/animation/src/main/java/com/blue/leaves/animation/basic/specials/out/TakingOffAnimator.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/animation/src/main/java/com/blue/leaves/animation/basic/zooming_entrances/ZoomInAnimator.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/animation/src/main/java/com/blue/leaves/animation/basic/zooming_entrances/ZoomInDownAnimator.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/animation/src/main/java/com/blue/leaves/animation/basic/zooming_entrances/ZoomInLeftAnimator.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/animation/src/main/java/com/blue/leaves/animation/basic/zooming_entrances/ZoomInRightAnimator.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/animation/src/main/java/com/blue/leaves/animation/basic/zooming_entrances/ZoomInUpAnimator.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/animation/src/main/java/com/blue/leaves/animation/basic/zooming_exits/ZoomOutAnimator.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/animation/src/main/java/com/blue/leaves/animation/basic/zooming_exits/ZoomOutDownAnimator.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/animation/src/main/java/com/blue/leaves/animation/basic/zooming_exits/ZoomOutLeftAnimator.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/animation/src/main/java/com/blue/leaves/animation/basic/zooming_exits/ZoomOutRightAnimator.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/animation/src/main/java/com/blue/leaves/animation/basic/zooming_exits/ZoomOutUpAnimator.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/app/src/main/assets" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/blue/leaves/common/animation/base1/Base1AnimationActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/blue/leaves/common/animation/base1/EffectAdapter.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/blue/leaves/common/animation/base1/ExampleActivity.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/com/blue/leaves/common/textview/autofit/AutoFitActivity.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/com/blue/leaves/common/textview/babushkatext/BabushkatextMainActivity.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/com/blue/leaves/common/textview/floatlabelededittext/FloatableEdittextMainActivity.java" charset="GBK" />
@@ -23,12 +92,15 @@
     <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/token_selected.xml" charset="GBK" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_autofit_main.xml" charset="GBK" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_babushkatextmain.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_base_animation_my.xml" charset="GBK" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_floatlabeledittext_main.xml" charset="GBK" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_text_drawable_main.xml" charset="GBK" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_textdrawable_list.xml" charset="GBK" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_titanic_main.xml" charset="GBK" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_tokenautocomplete_main.xml" charset="GBK" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/layout/contact_token.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/example_base_animation.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/item_base_animation.xml" charset="GBK" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/layout/person_layout.xml" charset="GBK" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/layout/text_drawable_list_item_layout.xml" charset="GBK" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/menu/check_box.xml" charset="GBK" />

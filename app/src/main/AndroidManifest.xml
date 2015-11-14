@@ -2,6 +2,7 @@
     package="com.blue.leaves.common"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <uses-permission android:name="com.android.vending.BILLING"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -63,6 +64,33 @@
         <activity android:name=".animation.flip.demo.FlipWebViewActivity"/>
         <activity android:name=".animation.flip.demo.Issue51Activity"/>
         <activity android:name=".animation.flip.demo.Issue5Activity"/>
+
+        <activity android:name=".animation.listviewanimations.ListviewMainActivity"/>
+        <activity android:name=".animation.listviewanimations.appearance.AppearanceExamplesActivity"/>
+        <activity android:name=".animation.listviewanimations.googlecards.GoogleCardsActivity"/>
+        <activity android:name=".animation.listviewanimations.itemmanipulation.ItemManipulationsExamplesActivity"/>
+        <activity android:name=".animation.listviewanimations.itemmanipulation.DynamicListViewActivity"/>
+        <activity android:name=".animation.listviewanimations.gridview.GridViewActivity"/>
+        <activity android:name=".animation.listviewanimations.itemmanipulation.expandablelistitems.ExpandableListItemActivity"/>
+        <activity android:name=".animation.listviewanimations.StickyListHeadersActivity"/>
+        <activity android:name=".animation.base1.Base1AnimationActivity"/>
+        <activity android:name=".animation.base1.ExampleActivity"/>
+        <activity android:name=".animation.base2.BaseAnimation2Activity"/>
+
+        <activity android:name=".animation.splash.ZakerActivity"/>
+        <activity android:name=".animation.splash.splitActivity.Activity1"/>
+        <activity android:name=".animation.splash.splitActivity.Activity2"/>
+        <activity android:name=".animation.splash.splitActivity.Activity3"/>
+        <activity android:name=".animation.splash.splitActivity.Activity4"/>
+        <activity android:name=".animation.splash.fade.FadeSplashScreenActivity"/>
+        <activity android:name=".animation.splash.fade.Fade2MainActivity"/>
+        <activity android:name=".animation.splash.fade.FadeMainActivity"/>
+        <activity android:name=".animation.splash.LensFocusActivity"/>
+        <activity android:name=".animation.splash.Rotate3DActivity"/>
+        <activity android:name=".animation.splash.RotateActivity"/>
+        <activity android:name=".animation.splash.SplashMainActivity"/>
+        <activity android:name=".animation.splash.ViewPagerActivity"/>
+
     </application>
 
 </manifest>

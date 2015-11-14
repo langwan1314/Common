@@ -234,7 +234,7 @@ public class ViewAnimator {
      * Cancels any existing animations for given View.
      * 取消一个view上面可能存在的所有动画
      */
-    void cancelExistingAnimation(@NonNull final View view) {
+    public void cancelExistingAnimation(@NonNull final View view) {
         int hashCode = view.hashCode();
         Animator animator = mAnimators.get(hashCode);
         if (animator != null) {
