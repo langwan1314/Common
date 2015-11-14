@@ -132,4 +132,15 @@
     <string name="shopping_hint">Shop and get offers, promo codes and discounts on your future purchase.</string>
     <string name="social_network_hint">Stay connected with your friends, colleagues and family globally</string>
     <string name="skip">SKIP</string>
+
+    <string name="title_activity_my">Reachability Sample</string>
+    <string name="title_activity_drawer">DrawerActivity</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
+    <string name="title_activity_back_and_hover">BackandHoverActivity</string>
+    <string name="title_activity_custom_animation">CustomAnimationActivity</string>
 </resources>

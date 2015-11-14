@@ -73,4 +73,6 @@
 
     <dimen name="viewpager_imageWidth_height">200dp</dimen>
     <dimen name="viewpager_circleindicator_radius">4.5dp</dimen>
+
+    <dimen name="navigation_drawer_width">240dp</dimen>
 </resources>

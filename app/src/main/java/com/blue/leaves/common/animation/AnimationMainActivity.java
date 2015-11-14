@@ -8,6 +8,7 @@ import com.blue.leaves.common.animation.base1.Base1AnimationActivity;
 import com.blue.leaves.common.animation.base2.BaseAnimation2Activity;
 import com.blue.leaves.common.animation.flip.demo.FlipMainActivity;
 import com.blue.leaves.common.animation.listviewanimations.ListviewMainActivity;
+import com.blue.leaves.common.animation.reachability.IPhoneMyActivity;
 import com.blue.leaves.common.animation.splash.SplashMainActivity;
 import com.blue.leaves.common.animation.viewpager.ViewPagerMainActivity;
 import com.blue.leaves.widget.group.expandablelayout.ExpandableLayoutListView;
@@ -15,7 +16,7 @@ import com.blue.leaves.widget.group.expandablelayout.ExpandableLayoutListView;
 public class AnimationMainActivity extends BaseMainActivity {
 
     private ExpandableLayoutListView mListView = null;
-    String[] data1 = {"flip", "listviewanimations", "splash", "base1", "base2", "viewpager"};
+    String[] data1 = {"flip", "listviewanimations", "splash", "base1", "base2", "viewpager", "Reachability"};
     String[
             ] data2 =
 
@@ -39,12 +40,14 @@ public class AnimationMainActivity extends BaseMainActivity {
                     , "五、base2：<br><br><br><br>" +
                     "基础动画，各种曲线动画。",
                     "五、viewpager：<br><br>https://github.com/TakeoffAndroid/AppIntroAnimation<br><br>" +
-                            "ViewPager式颜色切换动画,也可以用作启动页动画。"
+                            "ViewPager式颜色切换动画,也可以用作启动页动画。",
+                    "六、Reachability：<br><br>https://github.com/sakebook/Reachability<br><br>" +
+                            "iPhone 6 & 6 Plus效果动画。"
             };
     private Class[] mListClass = {FlipMainActivity.class, ListviewMainActivity.class, SplashMainActivity.class,
             Base1AnimationActivity
                     .class, BaseAnimation2Activity
-            .class, ViewPagerMainActivity.class};
+            .class, ViewPagerMainActivity.class, IPhoneMyActivity.class};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

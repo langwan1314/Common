@@ -91,6 +91,12 @@
         <activity android:name=".animation.splash.SplashMainActivity"/>
         <activity android:name=".animation.splash.ViewPagerActivity"/>
 
+        <activity android:name=".animation.viewpager.ViewPagerMainActivity"/>
+        <activity android:name=".animation.reachability.BackandHoverActivity"/>
+        <activity android:name=".animation.reachability.CustomAnimationActivity"/>
+        <activity android:name=".animation.reachability.DrawerActivity"/>
+        <activity android:name=".animation.reachability.IPhoneMyActivity"/>
+
     </application>
 
 </manifest>
