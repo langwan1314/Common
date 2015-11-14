@@ -36,4 +36,5 @@ dependencies {
     compile project(':textview')
     compile project(':widget')
     compile project(':animation')
+    compile project(':nineOldAndroids')
 }

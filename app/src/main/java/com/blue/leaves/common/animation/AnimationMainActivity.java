@@ -29,9 +29,7 @@ import com.blue.leaves.widget.group.expandablelayout.ExpandableLayoutListView;
 public class AnimationMainActivity extends BaseMainActivity {
 
     private ExpandableLayoutListView mListView = null;
-    String[] data1 = {"flip", "111111",
-            "222222", "333333333",
-            "44444444444"};
+    String[] data1 = {"flip"};
     String[
             ] data2 =
 
